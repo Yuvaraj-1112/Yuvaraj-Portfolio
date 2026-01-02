@@ -3,7 +3,7 @@ export const expData = {
         intern1:{
             role:"Web Developer Intern",
             org:"FrontierWox Tech Pvt Ltd",
-            date:"Aug-2025 to Dec-2025",
+            date:"Aug-2025 to Feb-2026",
             exp:"Through this opportunity, I enhanced my frontend, backend, and database management skills by working on real-time projects. I also developed strong interpersonal skills, including time management, decision-making, effective communication, and team collaboration.",
             project:{
                 pro1:{
@@ -16,7 +16,7 @@ export const expData = {
                 pro2:{
                     title: "Website for Devotional Organisation",
                     tools:["HTML", "CSS", "JavaScript"],
-                    obj:"To bulid a professional website for the organisation that visually enhance the products and services of the organisation using responsive designs.",
+                    obj:"Built a professional website for the organisation that visually enhance the products and services of the organisation using responsive designs.",
                     git:"https://github.com/frontierwox/devosional-web",
                     demo:"https://sri-bala-gyanjivi-foundation.vercel.app/",
                 },
@@ -24,7 +24,7 @@ export const expData = {
                     title: "Web Application for Portfolio Builder",
                     tools:["React.js", "Node.js", "Mongo DB"],
                     obj:"To design and develop a portfolio builder application that allows users to create and customize dynamic portfolios using reusable components, modern frontend technologies, and scalable design architecture.",
-                    git:"https://github.com/VasanthanRamesh/fwt-portfolio",
+                    git:"",
                     demo:"",
                 },
             }

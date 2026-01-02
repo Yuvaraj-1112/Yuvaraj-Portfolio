@@ -32,8 +32,8 @@ export const profileData = {
     glance:[
         {
     title: "Projects",
-    value: "5",
-    meta: "2+ in this year",
+    value: "6",
+    meta: "3+ in this year",
     icon: "🚀",
   },
     {

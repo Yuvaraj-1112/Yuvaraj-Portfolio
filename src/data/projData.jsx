@@ -12,6 +12,16 @@ export const projData = {
                 "Resilience", "Leadership",],
 
     projects: {
+        pro3:{
+            Title: "Personal Portfolio",
+            Type: "Self designed and developed",
+            Tools: ["React.js", "Tailwind CSS", "Vitest"],
+            Objective:"Created a responsive portfolio website to highlights skills and experience using a modern frontend framework, optimized for performance and accessibility, and tested across multiple screen sizes and browsers for visualization and smooth experience.",
+            Git:"https://github.com/Yuvaraj-1112/Yuvaraj-Portfolio",
+            Demp:"",
+            Paper:"",
+        },
+
         pro2:{
         Title: "Clothing Store Website",
         Type: "Self designed and developed",
