@@ -1,13 +1,14 @@
 import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/Header';
-import Home from "./pages/home";
 
+import Home from "./pages/home";
 import About from "./pages/about";
 import Project from './pages/project';
-import Experience from './pages/Experience';
+import Experience from './pages/experience';
 import Certificate from "./pages/certificate";
-import Contact from './pages/Contact';
+import Contact from './pages/contact';
+
 import Footer from './components/Footer';
 
 function App() {
