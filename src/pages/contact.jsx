@@ -15,12 +15,11 @@ export default function Contact(){
                 <Title>Personal Contact</Title>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-[6px] lg:gap-2 w-full">
              {profileData.perDet.map((det,index) => (
-              <div key={index} className="relative px-1 py-1 group">
+              <div key={index} className="relative px-2 py-1 lg:py-5 group">
 
-                 <div className="flex justify-between relative overflow-hidden px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-3 mx-auto  
-                                border border-orange-400 rounded-xl shadow-orange-100/50 shadow-xl transition-all duration-300 ease-out
+                 <div className="flex justify-between relative overflow-hidden px-2 py-2 sm:px-3 sm:py-2 lg:px-4 lg:py-4 mx-auto  
+                                border border-orange-400 rounded-lg md:rounded-xl shadow-orange-100/50 shadow-xl transition-all duration-300 ease-out
                                 bg-stone-50 group-hover:bg-gradient-to-br group-hover:from-orange-400 group-hover:to-orange-300">
-                                  
                   <span className="absolute z-20 top-1/2 -translate-y-1/2 -left-1/2 w-[120%] h-full pointer-events-none
                   md:bg-gradient-to-r from-transparent via-white/40 to-transparent blur-md opacity-0 group-hover:opacity-100
                    group-hover:animate-[shine-horizontal-card_1.2s_linear_infinite]"/>
@@ -30,7 +29,7 @@ export default function Contact(){
                     <p className="text-sm sm:text-base font-semibold group-hover:text-white">{det.value}</p>
                   </div>
 
-                  <div className=" hidden md:flex z-30"> 
+                  <div className="hidden md:block z-30"> 
                     <p className="text-xl lg:text-2xl bg-gray-100 rounded-sm p-1 
                                   group-hover:bg-white/50 transition-colors duration-100">
                                   {det.icon}</p>
