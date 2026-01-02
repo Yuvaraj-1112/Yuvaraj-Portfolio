@@ -102,7 +102,7 @@ export default function Header() {
       </div>
 
       <div data-testid="mobile-menu"
-        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out
+        className={`md:hidden overflow-hidden transition-all duration-700 ease-in-out
           ${isMenuOpen ? "max-h-72 opacity-100" : "max-h-0 opacity-0"}
         `} >
           <div className="max-w-7xl mx-auto">
@@ -121,7 +121,7 @@ export default function Header() {
            onClick={() => setIsMenuOpen(false)}
            className={({ isActive }) =>
          ` ${mobileNav({ isActive })}
-         transform transition-all duration-600 ease-out
+         transform transition-all duration-700 ease-out
          ${isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-300 opacity-0"}`
         }
         style={{ transitionDelay: `${index * 100}ms` }}>
