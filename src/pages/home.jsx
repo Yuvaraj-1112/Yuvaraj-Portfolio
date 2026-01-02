@@ -65,7 +65,7 @@ export default function Home() {
 
          <Hr/>
 
-       <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4">
+       <Div>
            <Title>At a Glance</Title>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 lg:gap-3 w-full">
              {profileData.glance.map((glan,index) => (
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             ))}
           </div>
-      </div>
+      </Div>
 
        <Hr/>
 

@@ -13,20 +13,21 @@ export default function Contact(){
         <Section>
             <Div>
                 <Title>Personal Contact</Title>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2 lg:gap-3 relative overflow-hiden">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-[6px] lg:gap-2 w-full">
              {profileData.perDet.map((det,index) => (
-              <div key={index} className="relative px-2 py-1 group">
+              <div key={index} className="relative px-1 py-1 group">
 
-                <div className="flex justify-between relative overflow-hidden px-2 py-3 sm:px-3 sm:py-4 lg:px-4 lg:py-5 mx-auto  
+                 <div className="flex justify-between relative overflow-hidden px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-3 mx-auto  
                                 border border-orange-400 rounded-xl shadow-orange-100/50 shadow-xl transition-all duration-300 ease-out
                                 bg-stone-50 group-hover:bg-gradient-to-br group-hover:from-orange-400 group-hover:to-orange-300">
+                                  
                   <span className="absolute z-20 top-1/2 -translate-y-1/2 -left-1/2 w-[120%] h-full pointer-events-none
                   md:bg-gradient-to-r from-transparent via-white/40 to-transparent blur-md opacity-0 group-hover:opacity-100
                    group-hover:animate-[shine-horizontal-card_1.2s_linear_infinite]"/>
 
                   <div className="flex flex-col gap-1 z-30">
-                    <p className="text-sm sm:text-base font-medium text-gray-600 group-hover:text-white/90">{det.title}</p>
-                    <p className="text-sm sm:text-base font-bold group-hover:text-white">{det.value}</p>
+                    <p className="text-xs sm:text-sm font-medium text-gray-700 group-hover:text-white/90">{det.title}</p>
+                    <p className="text-sm sm:text-base font-semibold group-hover:text-white">{det.value}</p>
                   </div>
 
                   <div className=" hidden md:flex z-30"> 
