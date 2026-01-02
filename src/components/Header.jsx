@@ -121,7 +121,7 @@ export default function Header() {
            onClick={() => setIsMenuOpen(false)}
            className={({ isActive }) =>
          ` ${mobileNav({ isActive })}
-         transform transition-all duration-500 ease-in-out
+         transform transition-all duration-600 ease-out
          ${isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-300 opacity-0"}`
         }
         style={{ transitionDelay: `${index * 100}ms` }}>
