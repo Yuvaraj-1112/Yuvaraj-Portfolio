@@ -52,7 +52,7 @@ export default function Home() {
                        Email <Shine></Shine> </a>
 
           <Link className="px-4 sm:px-5 lg:px-6 py-2
-                           text-base lg:text-lg bg-orange-50 text-orange-500 
+                           text-base lg:text-lg bg-orange-50 text-orange-400 
                            border border-orange-400/50 rounded-lg group hover:scale-105 hover:shadow-xl hover:shadow-orange
                            transition-all duration-200 ease-out" to="/project">Projects</Link>
 
