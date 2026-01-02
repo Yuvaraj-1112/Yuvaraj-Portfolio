@@ -15,7 +15,7 @@ export default function Contact(){
                 <Title>Personal Contact</Title>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-[6px] lg:gap-2 w-full">
              {profileData.perDet.map((det,index) => (
-              <div key={index} className="relative px-2 py-1 lg:py-5 group">
+              <div key={index} className="relative p-1 group">
 
                  <div className="flex justify-between relative overflow-hidden px-2 py-2 sm:px-3 sm:py-2 lg:px-4 lg:py-4 mx-auto  
                                 border border-orange-400 rounded-lg md:rounded-xl shadow-orange-100/50 shadow-xl transition-all duration-300 ease-out
