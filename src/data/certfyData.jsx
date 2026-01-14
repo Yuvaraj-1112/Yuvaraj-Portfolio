@@ -5,7 +5,7 @@ export const certifyData = {
             lang:["Python", "C"],
             topic:["OOPS concept", "Debugging", "Memory Management", "Foundations of DSA"],
             year:"2025",
-            img:"/certificate/Programming with Generative AI.avif"
+            img:`${import.meta.env.BASE_URL}certificate/Programming with Generative AI.avif`
         },
     },
 
@@ -15,7 +15,7 @@ export const certifyData = {
             lang:["SQL"],
             topic:["Group", "Order", "Procedure", "Functions", "Data collection", "Perform analysis"],
             year:"2025",
-            img:"/certificate/sql certificate.avif"
+            img:`${import.meta.env.BASE_URL}certificate/sql certificate.avif`
         },
 
          skcor2:{
@@ -23,7 +23,7 @@ export const certifyData = {
             lang:["Fundamentals of Cybersecurity"],
             topic:["Finance sector", "Encryption", "Secure Transaction", "Protecting financial data"],
             year:"2025",
-            img:"/certificate/cyber security certificate.avif"
+            img:`${import.meta.env.BASE_URL}certificate/cyber security certificate.avif`
         },
 
     },
@@ -34,7 +34,7 @@ export const certifyData = {
             lang:["React.js", "Node.js"],
             topic:["Components", "React Hooks", "Authentication", "Version Control", "Deployment"],
             year:"2025",
-            img:"/certificate/Guvi awt certificate.avif"
+            img:`${import.meta.env.BASE_URL}certificate/Guvi awt certificate.avif`
         },
 
         webc2:{
@@ -42,7 +42,7 @@ export const certifyData = {
             lang:["Java"],
             topic:["OOPS Concept", "Java Evolution", "Understanding AI", "Implement AI in Java"],
             year:"2025",
-            img:"/certificate/Java certificate.avif"
+            img:`${import.meta.env.BASE_URL}certificate/Java certificate.avif`
         },
 
          webc3:{
@@ -50,7 +50,7 @@ export const certifyData = {
             lang:["Domains"],
             topic:["Evolving Domains", "Software testing", "Cyber Security", "AI agents", "Data Science"],
             year:"2025",
-            img:"/certificate/Recent trends in IT.avif"
+            img:`${import.meta.env.BASE_URL}certificate/Recent trends in IT.avif`
         },
 
             webc4:{
@@ -58,7 +58,7 @@ export const certifyData = {
             lang:["Technical"],
             topic:["Fundamentals of computer", "Python", "Java"],
             year:"2025",
-            img:"/certificate/Tata_Cruible_Prelims.avif"
+            img:`${import.meta.env.BASE_URL}certificate/Tata_Cruible_Prelims.avif`
         },
     },
 

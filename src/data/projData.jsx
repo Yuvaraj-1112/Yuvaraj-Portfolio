@@ -5,7 +5,8 @@ export const projData = {
                  Backend: ["Node.js", "Express", "RESTful APIs", "Flask"],
                  Database: ["Mongo DB", "SQL"],
                  Testing:["Jest", "Vitest"],
-                 Tools: ["GitHub", "Figma","GSAP", "Three.js","Docker", "Jest"],
+                 "Cloud and DevOps":["AWS", "Docker"],
+                 Tools: ["Git", "GitHub", "Figma","GSAP", "Three.js", "Jest"],
               },
               
     presonalSkills:["Time Management", "Communication","Critical Thinking", "Decision-Making", "Team Collaboration", "Adaptability", 
