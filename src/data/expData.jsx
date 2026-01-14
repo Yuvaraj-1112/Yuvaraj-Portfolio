@@ -9,7 +9,7 @@ export const expData = {
                 pro1:{
                     title:"Portfolio for Faculty",
                     tools:["React.js", "CSS", "Jest"],
-                    obj:"To develop a portfolio website that highlights skills and experience using clean, professional scalable, and a maintainable design structure.",
+                    obj:"Created a responsive portfolio website to highlight skills and experience using a modern frontend framework, optimized for performance and accessibility, and tested across multiple screen sizes and browsers for visualization and a smooth experience.",
                     git:"https://github.com/frontierwox/dr-m-julias-ceaser-portfolio",
                     demo:"juliasceasar.infinityfree.me",
                 },
