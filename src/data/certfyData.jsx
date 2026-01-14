@@ -1,3 +1,13 @@
+import GenAi from "../assets/certificate/Programming with Generative AI.avif";
+import SqlDA from "../assets/certificate/sql certificate.avif";
+import CiF from "../assets/certificate/cyber security certificate.avif";
+import AWT from "../assets/certificate/Guvi awt certificate.avif";
+import javxAi from "../assets/certificate/Java certificate.avif";
+import RtiIt from "../assets/certificate/Recent trends in IT.avif";
+import TataCq from "../assets/certificate/Tata_Cruible_Prelims.avif";
+
+
+
 export const certifyData = {
     nptel:{
         nCor1:{
@@ -5,7 +15,7 @@ export const certifyData = {
             lang:["Python", "C"],
             topic:["OOPS concept", "Debugging", "Memory Management", "Foundations of DSA"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/Programming with Generative AI.avif`
+            img:GenAi
         },
     },
 
@@ -15,7 +25,7 @@ export const certifyData = {
             lang:["SQL"],
             topic:["Group", "Order", "Procedure", "Functions", "Data collection", "Perform analysis"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/sql certificate.avif`
+            img:SqlDA
         },
 
          skcor2:{
@@ -23,7 +33,7 @@ export const certifyData = {
             lang:["Fundamentals of Cybersecurity"],
             topic:["Finance sector", "Encryption", "Secure Transaction", "Protecting financial data"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/cyber security certificate.avif`
+            img:CiF
         },
 
     },
@@ -34,7 +44,7 @@ export const certifyData = {
             lang:["React.js", "Node.js"],
             topic:["Components", "React Hooks", "Authentication", "Version Control", "Deployment"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/Guvi awt certificate.avif`
+            img:AWT
         },
 
         webc2:{
@@ -42,7 +52,7 @@ export const certifyData = {
             lang:["Java"],
             topic:["OOPS Concept", "Java Evolution", "Understanding AI", "Implement AI in Java"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/Java certificate.avif`
+            img:javxAi
         },
 
          webc3:{
@@ -50,7 +60,7 @@ export const certifyData = {
             lang:["Domains"],
             topic:["Evolving Domains", "Software testing", "Cyber Security", "AI agents", "Data Science"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/Recent trends in IT.avif`
+            img:RtiIt
         },
 
             webc4:{
@@ -58,7 +68,7 @@ export const certifyData = {
             lang:["Technical"],
             topic:["Fundamentals of computer", "Python", "Java"],
             year:"2025",
-            img:`${import.meta.env.BASE_URL}certificate/Tata_Cruible_Prelims.avif`
+            img:TataCq
         },
     },
 
