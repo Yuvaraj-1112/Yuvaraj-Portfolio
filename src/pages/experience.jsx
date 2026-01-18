@@ -54,14 +54,16 @@ export default function Experience(){
                                                     {intProj.git && intProj.git.trim() !== "" &&(
                                                         <a className="relative overflow-hidden px-2 sm:px-3 lg:px-4 py-1 text-base lg:text-lg
                                                         bg-orange-400 text-white rounded-md group hover:scale-105 hover:shadow-xl
-                                                        transition-all duration-200 ease-out" href={intProj.git} target="_blank" rel="noopener noreferrer">
+                                                        transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-200"
+                                                        href={intProj.git} target="_blank" rel="noopener noreferrer">
                                                         Code <Shine></Shine></a>
                                                     )}
 
                                                     {intProj.demo && intProj.demo.trim() !== "" &&(
                                                       <a className="relative overflow-hidden px-2 sm:px-3 lg:px-4 py-1 text-base lg:text-lg
                                                       bg-orange-400 text-white rounded-md group hover:scale-105 hover:shadow-xl
-                                                      transition-all duration-200 ease-out" href={intProj.Demo} target="_blank" rel="noopener noreferrer">
+                                                      transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-200" 
+                                                      href={intProj.demo} target="_blank" rel="noopener noreferrer">
                                                       Demo <Shine></Shine></a>
                                                     )}
                                                 </div>

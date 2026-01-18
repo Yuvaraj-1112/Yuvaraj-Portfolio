@@ -11,7 +11,7 @@ export const expData = {
                     tools:["React.js", "CSS", "Jest"],
                     obj:"Created a responsive portfolio website to highlight skills and experience using a modern frontend framework, optimized for performance and accessibility, and tested across multiple screen sizes and browsers for visualization and a smooth experience.",
                     git:"https://github.com/frontierwox/dr-m-julias-ceaser-portfolio",
-                    demo:"juliasceasar.infinityfree.me",
+                    demo:"https://juliasceasar.infinityfree.me",
                 },
                 pro2:{
                     title: "Website for Devotional Organisation",

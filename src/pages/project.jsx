@@ -39,20 +39,23 @@ export default function Project(){
                        <div className="flex flex-row gap-2 sm:gap-4 lg:gap-6">
                          <a className="relative overflow-hidden px-4 sm:px-5 lg:px-6 py-2 text-base lg:text-lg
                       bg-orange-400 text-white rounded-lg group hover:scale-105 hover:shadow-xl
-                      transition-all duration-200 ease-out" href={proj.Git} target="_blank" rel="noopener noreferrer">
+                      transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-150" 
+                      href={proj.Git} target="_blank" rel="noopener noreferrer">
                          Code <Shine></Shine></a>
 
                         {proj.Demo && proj.Demo.trim() !== "" && (
                             <a className="relative overflow-hidden px-4 sm:px-5 lg:px-6 py-2 text-base lg:text-lg
                       bg-orange-400 text-white rounded-lg group hover:scale-105 hover:shadow-xl
-                      transition-all duration-200 ease-out" href={proj.Demo} target="_blank" rel="noopener noreferrer">
+                      transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-150" 
+                      href={proj.Demo} target="_blank" rel="noopener noreferrer">
                         Demo <Shine></Shine></a>
                         )}
                         
                         {proj.Paper && proj.Paper.trim() !== "" && (
                             <a className="relative overflow-hidden px-4 sm:px-5 lg:px-6 py-2 text-base lg:text-lg
                       bg-orange-400 text-white rounded-lg group hover:scale-105 hover:shadow-xl
-                      transition-all duration-200 ease-out" href={proj.Paper} target="_blank" rel="noopener noreferrer">
+                      transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-150" 
+                      href={proj.Paper} target="_blank" rel="noopener noreferrer">
                         Paper <Shine></Shine></a>
                         )}
                        </div>

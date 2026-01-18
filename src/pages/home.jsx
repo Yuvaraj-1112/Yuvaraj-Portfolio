@@ -47,7 +47,7 @@ export default function Home() {
         <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 lg:gap-5">
         <a className="relative overflow-hidden px-4 sm:px-5 lg:px-6 py-2 text-base lg:text-lg
                       bg-orange-400 text-white rounded-lg group hover:scale-105 hover:shadow-xl
-                      transition-all duration-200 ease-out"
+                      transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-150"
                        href="mailto:yuva123e@gmail.com" target="_blank" rel="noopener noreferrer">
                        Email <Shine></Shine> </a>
 
@@ -58,7 +58,7 @@ export default function Home() {
 
           <a className="relative overflow-hidden px-4 sm:px-5 lg:px-6 py-2 text-base lg:text-lg 
                         bg-orange-400 text-white rounded-lg group group hover:scale-105 hover:shadow-xl
-                        transition-all duration-200 ease-out"
+                        transition-all duration-200 ease-out active:shadow-inner active:translate-y-[2px] transition duration-200"
                          href="/Yuvaraj's resume.pdf" download>
                           Resume <Shine></Shine></a>
         </div>
