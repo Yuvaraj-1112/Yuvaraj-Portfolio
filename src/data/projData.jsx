@@ -1,9 +1,9 @@
 export const projData = {
     techSkill: {
-                 Programming: ["Python", "Java"],
-                 Frontend: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS"],
-                 Backend: ["Node.js", "Express", "RESTful APIs", "Flask"],
-                 Database: ["Mongo DB", "SQL"],
+                 Programming: ["Python", "Java","JavaScript", "C#","HTML", "CSS"],
+                 Frontend: ["React.js", "Tailwind CSS","Bootstrap"],
+                 Backend: ["Node.js", "Express", "Spring Boot", "RESTful APIs", "Flask"],
+                 Database: ["Mongo DB", "MySQL", "Postgre SQL"],
                  Testing:["Jest", "Vitest"],
                  "Cloud and DevOps":["AWS", "Docker"],
                  Tools: ["Git", "GitHub", "Figma","GSAP", "Three.js", "Jest"],
@@ -13,6 +13,16 @@ export const projData = {
                 "Resilience", "Leadership",],
 
     projects: {
+         pro4:{
+            Title: "Web Application for MCQ Practice",
+            Type: "Self designed and developed",
+            Tools: ["React.js", "Node.js","Express.js", "MongoDb"],
+            Objective:"To develop an intelligent assessment platform capable of handling both passage-based and standalone multiple-choice questions, generating randomized tests, evaluating user responses, and providing detailed performance insights.",
+            Git:"",
+            Demp:"",
+            Paper:"",
+        },
+
         pro3:{
             Title: "Personal Portfolio",
             Type: "Self designed and developed",

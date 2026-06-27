@@ -32,8 +32,8 @@ export const profileData = {
     glance:[
         {
     title: "Projects",
-    value: "6",
-    meta: "3+ in this year",
+    value: "8",
+    meta: "2+ in this year",
     icon: "🚀",
   },
     {
@@ -44,14 +44,14 @@ export const profileData = {
   },
     {
     title: "Internship",
-    value: "2",
+    value: "3",
     meta: "1 in this year",
     icon: "🎓",
   },
     {
     title: "Courses",
-    value: "10",
-    meta: "3+ in this year",
+    value: "20",
+    meta: "4+ in this year",
     icon: "📚",
   },
 ],
