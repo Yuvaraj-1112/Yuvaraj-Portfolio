@@ -51,7 +51,7 @@ export const profileData = {
     {
     title: "Courses",
     value: "20",
-    meta: "4+ in this year",
+    meta: "5+ in this year",
     icon: "📚",
   },
 ],

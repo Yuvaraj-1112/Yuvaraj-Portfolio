@@ -3,6 +3,8 @@ import Hr from "../components/Hr";
 import Title from "../components/Title";
 import Div from "../components/Div";
 
+import CardInfo from "../components/CertifyCards";
+
 import { certifyData } from "../data/certfyData";
 
 import { useState } from "react";
@@ -24,31 +26,13 @@ export default function Certificate(){
                                     py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
 
                                 <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Title:</strong>
-                                        {nptel.title}</p>
+                                    <CardInfo label="Title">{nptel.title}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Year:</strong>
-                                        {nptel.year}</p>
+                                    <CardInfo label="Year">{nptel.year}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Language:</strong>
-                                        {nptel.lang.join(", ")}</p>
+                                    <CardInfo label="Language">{nptel.lang.join(", ")}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Topics:</strong>
-                                        {nptel.topic.join(", ")}</p>
-
-                                    
+                                    <CardInfo label="Topics">{nptel.topic.join(", ")}</CardInfo>    
                                 </div>
 
                                 <div className="flex items-center justify-center md:justify-end">
@@ -69,6 +53,41 @@ export default function Certificate(){
                 <Hr></Hr>
 
                 <Div>
+                    <Title>MATLAB Course</Title>
+                    <Div>
+                        {Object.entries(certifyData.matlab).map(([key,matlab]) =>(
+                            <div key={key} className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 md:w-[90%] lg:w-[80%] px-3 sm:px-4 lg:px-5 
+                                    border-[1px] border-orange-200 rounded-xl md:hover:scale-101 transition
+                                    py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
+
+                                <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
+                                    <CardInfo label="Title">{matlab.title}</CardInfo>
+
+                                    <CardInfo label="Year">{matlab.year}</CardInfo>
+
+                                    <CardInfo label="Language">{matlab.lang.join(", ")}</CardInfo>
+
+                                    <CardInfo label="Topics">{matlab.topic.join(", ")}</CardInfo>    
+                                </div>
+
+                                <div className="flex items-center justify-center md:justify-end">
+                                    <img src={matlab.img} alt="Img-Loading" loading="eager" fetchpriority="high" decoding="async"
+                                    className="h-44 mt-2 md:mt-0 cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105"
+                                    onClick={() =>{
+                                        setImgSrc(matlab.img);
+                                        setOpenImg(true);
+                                    }
+                                    }
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </Div>
+                </Div>
+
+                <Hr></Hr>
+
+                <Div>
                     <Title>SkillUP Course</Title>
                     <Div>
                         {Object.entries(certifyData.skillup).map(([key,skillup]) =>(
@@ -76,31 +95,13 @@ export default function Certificate(){
                                     border-[1px] border-orange-200 rounded-xl md:hover:scale-101 transition
                                     py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
                                 <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Title:</strong>
-                                        {skillup.title}</p>
+                                   <CardInfo label="Title">{skillup.title}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Year:</strong>
-                                        {skillup.year}</p>
+                                    <CardInfo label="Year">{skillup.year}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Language:</strong>
-                                        {skillup.lang.join(", ")}</p>
+                                    <CardInfo label="Language">{skillup.lang.join(",")}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Topics:</strong>
-                                        {skillup.topic.join(", ")}</p>
-
-                                    
+                                    <CardInfo label="Topics">{skillup.topic.join(",")}</CardInfo> 
                                 </div>
 
                                 <div className="flex items-center justify-center md:justify-end">
@@ -120,38 +121,90 @@ export default function Certificate(){
                 
                 <Hr></Hr>
 
+                <Div>
+                    <Title>Guvi Course</Title>
+                    <Div>
+                        {Object.entries(certifyData.guvi).map(([key,guvi]) =>(
+                            <div key={key} className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 md:w-[90%] lg:w-[80%] px-3 sm:px-4 lg:px-5 
+                                    border-[1px] border-orange-200 rounded-xl md:hover:scale-101 transition
+                                    py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
+                                <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
+                                   <CardInfo label="Title">{guvi.title}</CardInfo>
+
+                                    <CardInfo label="Year">{guvi.year}</CardInfo>
+
+                                    <CardInfo label="Language">{guvi.lang.join(",")}</CardInfo>
+
+                                    <CardInfo label="Topics">{guvi.topic.join(",")}</CardInfo> 
+                                </div>
+
+                                <div className="flex items-center justify-center md:justify-end">
+                                    <img src={guvi.img} alt="Img-Loading" loading="eager" fetchpriority="high" decoding="async"
+                                    className="h-44 mt-2 md:mt-0 cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105"
+                                    onClick={() =>{
+                                        setImgSrc(guvi.img);
+                                        setOpenImg(true);
+                                    }
+                                    }
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </Div>
+                </Div>
+                
+                <Hr></Hr>
+
                  <Div>
-                    <Title>Webinars and Programs</Title>
+                    <Title>SkillEcted Webinars</Title>
+                    <Div>
+                        {Object.entries(certifyData.skillected).map(([key,sklctd]) =>(
+                            <div key={key} className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 md:w-[90%] lg:w-[80%] px-3 sm:px-4 lg:px-5 
+                                    border-[1px] border-orange-200 rounded-xl md:hover:scale-101 transition
+                                    py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
+                                <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
+                                   <CardInfo label="Title">{sklctd.title}</CardInfo>
+
+                                    <CardInfo label="Year">{sklctd.year}</CardInfo>
+
+                                    <CardInfo label="Language">{sklctd.lang.join(",")}</CardInfo>
+
+                                    <CardInfo label="Topics">{sklctd.topic.join(",")}</CardInfo> 
+                                </div>
+
+                                <div className="flex items-center justify-center md:justify-end">
+                                    <img src={sklctd.img} alt="Img-Loading" loading="eager" fetchpriority="high" decoding="async"
+                                    className="h-44 mt-2 md:mt-0 cursor-pointer rounded-lg transition-transform duration-300 hover:scale-105"
+                                    onClick={() =>{
+                                        setImgSrc(sklctd.img);
+                                        setOpenImg(true);
+                                    }
+                                    }
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </Div>
+                </Div>
+                
+                <Hr></Hr>
+
+                 <Div>
+                    <Title>Other Programs</Title>
                     <Div>
                         {Object.entries(certifyData.webinar).map(([key,webi]) =>(
                             <div key={key} className="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 md:w-[90%] lg:w-[80%] px-3 sm:px-4 lg:px-5 
                                      border-[1px] border-orange-200 rounded-xl md:hover:scale-101 transition 
                                     py-3 sm:py-4 lg:py-5 shadow shadow-xl shadow-orange-100/70">
                                 <div className="flex flex-col gap-1 sm:gap-[6px] lg:gap-2">
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Title:</strong>
-                                        {webi.title}</p>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Year:</strong>
-                                        {webi.year}</p>
+                                    <CardInfo label="Title">{webi.title}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Language:</strong>
-                                        {webi.lang.join(", ")}</p>
+                                    <CardInfo label="Year">{webi.year}</CardInfo>
 
-                                    <p className="flex flex-row gap-1 sm:gap-[6px] lg:gap-2 
-                                    text-base sm:text-lg text-gray-600">
-                                        <strong className="text-base md:text-lg  text-orange-400 font-medium">
-                                        Topics:</strong>
-                                        {webi.topic.join(", ")}</p>
+                                    <CardInfo label="Language">{webi.lang.join(",")}</CardInfo>
 
+                                    <CardInfo label="Topics">{webi.topic.join(",")}</CardInfo> 
                                     
                                 </div>
 
