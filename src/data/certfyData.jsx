@@ -136,7 +136,7 @@ export const certifyData = {
     skillected:{
         sklctd6:{
             title:"Portfolio Development",
-            lang:["React.js", 'TailwindCSS'],
+            lang:["React.js", 'Tailwind CSS'],
             topic:["Virtual DOM", "State Variables", "Props", "Vitest"],
             year:"2026",
             img:Porskd

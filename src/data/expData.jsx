@@ -8,7 +8,7 @@ export const expData = {
             exp: "Gained hands-on experience in full-stack web development by designing and developing scalable web applications using React.js, Spring Boot, and MySQL. Worked on frontend and backend integration, RESTful APIs, database management, authentication, and followed industry-standard software development practices.",
             project: {
                 pro1: {
-                    title: "Web Application for Attendance Site",
+                    title: "Web Application for Attendance Management",
                     tools: ["React.js", "Spring Boot", "MySQL"],
                     obj: "To develop a secure and efficient attendance management system that enables user authentication, attendance tracking, and real-time record management through a responsive React frontend, Spring Boot REST APIs, and a MySQL database.",
                     git: "",

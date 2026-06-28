@@ -17,7 +17,7 @@ export const projData = {
             Title: "Web Application for MCQ Practice",
             Type: "Self designed and developed",
             Tools: ["React.js", "Node.js","Express.js", "MongoDb"],
-            Objective:"To develop an intelligent assessment platform capable of handling both passage-based and standalone multiple-choice questions, generating randomized tests, evaluating user responses, and providing detailed performance insights.",
+            Objective:"Developed an interactive MCQ Practice Website that enables users to register, attempt topic-wise quizzes, receive instant feedback, and track their performance through a simple and engaging interface, providing an effective platform for self-assessment and learning.",
             Git:"",
             Demp:"",
             Paper:"",
