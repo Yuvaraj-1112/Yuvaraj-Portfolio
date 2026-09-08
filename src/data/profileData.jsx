@@ -1,12 +1,12 @@
 export const profileData = {
     name: "Yuvaraj E",
     title: [
-        "Full-Stack Web Developer | Software Developer",
+        "IT Enthusiast | Technology Learner",
         "Student at SRM Institute of Science and Technology, Tiruchirappalli",
     ],
     mobileNum: "+91 6383048080",
     email:"yuva123e@gmail.com",
-    objective:"An enthusiastic Full-Stack Developer focused on building scalable web applications and contributing to innovative projects while continuously enhancing my skills.",
+    objective:"An enthusiastic IT professional with interests in software development, data analytics, and information technology. I enjoy solving real-world problems through programming and technology while continuously developing my technical and analytical skills.",
     
     perDet:[
       {
@@ -56,14 +56,15 @@ export const profileData = {
   },
 ],
     specialized: [
-        "React and Node",
-        "API integration",
-        "Software testing",
-        "Debugging",
-        "Deployment",
-        "Understanding DevOps",
-        "Cloud management"
-    ],
+    "Programming",
+    "Web Development",
+    "Database Management",
+    "Data Analysis",
+    "API Integration",
+    "Software Testing",
+    "Debugging",
+    "Cloud & DevOps"
+],
     education:[
       {text:"MCA - Computer Applications",
        clg:"SRM Institute of Science and Technology, Tiruchirappalli"
